@@ -1,0 +1,45 @@
+{
+  "name": "create-issue",
+  "version": "0.0.0-preview.1",
+  "description": "Create a GitHub issue through the command line",
+  "keywords": [
+    "github",
+    "issue",
+    "create"
+  ],
+  "main": "build/index.js",
+  "bin": "build/index.js",
+  "file": [
+    "build"
+  ],
+  "scripts": {
+    "build": "bun build ./src/index.ts --outdir ./build",
+    "clean": "git clean ./build -xdf",
+    "lint": "eslint ."
+  },
+  "author": "Cedric van Putten <github@cedric.dev>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bycedric/create-issue.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bycedric/create-issue/issues"
+  },
+  "homepage": "https://github.com/bycedric/create-issue#readme",
+  "files": [
+    "build"
+  ],
+  "dependencies": {
+    "arg": "^5.0.2"
+  },
+  "eslintConfig": {
+    "extends": "universe/node"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "singleQuote": true,
+    "bracketSameLine": true
+  }
+}
