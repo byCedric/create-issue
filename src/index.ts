@@ -10,8 +10,10 @@ export type Input = typeof args;
 const args = arg({
   '--help': Boolean,
   '--version': Boolean,
+  '--template': String,
   '-h': '--help',
   '-v': '--version',
+  '-t': '--template',
 });
 
 if (args['--help']) {

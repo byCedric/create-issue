@@ -13,7 +13,8 @@ export function renderHelp() {
     ${chalk.dim('$')} ${manager} create issue [owner] [repository]
 
   ${chalk.bold('Options')}
-    --version, -v
-    --help, -h
+    --version, -v   Version number
+    --help, -h      Usage info
+    --template, -t  Template name to use
   `;
 }
